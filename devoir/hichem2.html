@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAttraine</title>
+    <script src="controle.js"></script>
+  </head>
+  <body>
+    <h1>Bienvenue</h1>
+    <form
+      name="f"
+      onsubmit="return verif()"
+      action="remerciment.html"
+      method="post"
+    >
+      <fieldset>
+        <legend>s'inscrire</legend>
+        <center>
+          <table>
+            <tr>
+              <td>pseudonyme</td>
+              <td><input name="t1" /></td>
+            </tr>
+            <tr>
+              <td>email:</td>
+              <td><input name="t2" /></td>
+            </tr>
+            <tr>
+              <td>mot de passe</td>
+              <td><input name="t3" /></td>
+            </tr>
+            <tr>
+              <td>retapez le mot de passe</td>
+              <td><input name="t4" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <fieldset>
+                  <legend>vous etes:</legend>
+                  <input name="type" type="radio" value="eleve" />Un eleve<br />
+                  <input name="type" type="radio" value="prof" />Un professeur
+                </fieldset>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="creer le compte" />
+          <input type="reset" value="reinitialiser" />
+        </center>
+      </fieldset>
+    </form>
+  </body>
+</html>
